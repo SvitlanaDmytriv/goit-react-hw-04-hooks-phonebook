@@ -2,10 +2,10 @@ import { useState } from 'react';
 import shortid from 'shortid';
 import s from './ContactForm.module.css';
 
-function ContactForm(addContact) {
+function ContactForm({ addContact }) {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-
+  console.log(name, number);
   const handleChange = e => {
     const { name, value } = e.target;
     switch (name) {
